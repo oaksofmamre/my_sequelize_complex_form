@@ -1,0 +1,34 @@
+
+
+<header class="page-header">
+  <h1>Job Applications Index</h1>
+  <a href="{{ newJobApplicationPath }}" class="btn btn-primary">+ New Job Application</a>
+</header>
+
+
+{{#if jobApplications.length }}
+  <ol>
+    {{#each jobApplications as |jobApplication| }}
+      <li><a href="{{ jobApplicationPath jobApplication.id }}">
+        Job Application - {{ jobApplication.id }}
+      </a></li>
+    {{/each }}
+  </ol>
+{{else }}
+  <p class="text-danger">No Applications</p>
+{{/if }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

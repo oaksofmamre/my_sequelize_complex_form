@@ -1,0 +1,34 @@
+{
+  "name": "demo_exploring_complex_forms",
+  "version": "1.0.0",
+  "description": "demo_exploring_complex_forms\\n====",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "which nodemon > /dev/null && nodemon app.js || node app.js",
+    "console": "node repl.js",
+    "c": "node repl.js",
+    "seed": "npm run sql db:migrate:undo:all && npm run sql db:migrate && npm run sql db:seed:all",
+    "seeds": "npm run sql db:migrate:undo:all && npm run sql db:migrate && npm run sql db:seed:all",
+    "sql": "node_modules/sequelize-cli/bin/sequelize"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-session": "^2.0.0-beta.1",
+    "express": "^4.15.2",
+    "express-flash-messages": "^0.1.1",
+    "express-handlebars": "^3.0.0",
+    "express-method-override-get-post-support": "0.0.3",
+    "load-helpers": "^1.0.1",
+    "method-override": "^2.3.10",
+    "morgan": "^1.8.1",
+    "morgan-toolkit": "^1.0.2",
+    "pg": "^6.1.5",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.30.4",
+    "sequelize-cli": "^2.7.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
